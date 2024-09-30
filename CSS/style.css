@@ -1,0 +1,157 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Estilo del header */
+header {
+    background-color: #7cb6b9;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #6347ff;
+    transition: color 0.3s ease;
+}
+
+/* Sección principal */
+section {
+    padding: 20px;
+    background-color: white;
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333333;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Imagen principal */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+
+a {
+    color: #4756ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1100ff;
+    text-decoration: underline;
+}
+
+/* Audio */
+audio {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Redes sociales */
+.redes-sociales {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    display: inline-block;
+    background-color: #7cb6b9;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.redes-sociales a i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.redes-sociales a:hover {
+    background-color: #9fe0ec;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #62b5e8;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Formulario */
+form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="submit"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #5347ff;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1e00ff;
+}
