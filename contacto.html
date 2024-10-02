@@ -2,7 +2,7 @@
 <html lang='es'>
 <head>
 	<meta charset='utf-8' />
-	<title>Página personal - Contacto</title>
+	<title> Contacto</title>
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 
 	<script src="https://kit.fontawesome.com/c571bb6186.js" crossorigin="anonymous"></script>
@@ -12,9 +12,10 @@
 		<nav>
 			<ul>
 				<li><a href='index.html'>Inicio</a></li>
-                <li><a href='autobiografia.html'>Quién soy</a></li>
+				<li><a href='autobiografia.html'>Quién soy</a></li>
 				<li><a href='galeria.html'>Galería</a></li>
 				<li><a href='contacto.html'>Contacto</a></li>
+				<li><a href="actividades.html">Actividades</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -42,63 +43,58 @@
 	</div>
 
 	<section>
-		<!-- Formulario simple que enviará una petición GET -->
-	<form action="">
-		<br></br>
-
-		<label for="nombre">Nombre:</label>
-		<input id=“nombre" type="text" name="nombre">
-		<input type="submit" value="Save">
-	</form>
-	<br></br>
-		<form>
-			<fieldset>
-			<legend>Uso del CheckBox - Intereses2</legend>
-			<input type="checkbox" name="deporte" value="Deportes" > Hacer Deporte
-			<input type="checkbox" name="tv" value="Televisión" > Ver Televisión
-			<input type="checkbox" name="ejercicio" value="Ejercicio" > Hacer Ejercicio
-			</fieldset>
+		<div class="form-container">
+			<h1>Formulario de Contacto</h1>
+			<form id="cv-form">
+				<!-- Campo de texto -->
+				<div class="form-group">
+					<label for="nombre">Nombre Completo:</label>
+					<input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre completo">
+				</div>
+	
+				<!-- Campo de correo electrónico -->
+				<div class="form-group">
+					<label for="email">Correo Electrónico:</label>
+					<input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+				</div>
+	
+				<!-- Área de texto -->
+				<div class="form-group">
+					<label for="mensaje">Mensaje o Consulta:</label>
+					<textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+				</div>
+	
 			
-			<fieldset>
-			<legend>Uso del Select - Estudios Actuales</legend>
-			<select name="select">
-			<option value="value1">Secundaria</option>
-			<br></br>
-			<option value="value2">Bachillerato</option>
-			<option value="value3">Licenciatura</option>
-			</select>
-			</fieldset>
-		</form>
-
-		<form>
-			<fieldset>
-			<legend>Uso de cajas de texto - Nombre</legend>
-			Nombre: <input name='nombre' type='text'>
-			Apellidos: <input name='apellidos' type='text' >
-			</fieldset>
-			<fieldset>
-			<legend>Uso de Radio Buttons - Género</legend>
-			<input type="radio" name="radio1" id="radio"> Masculino
-			<input type="radio" name="radio1" id="radio"> Femenino
-			</fieldset>
-		</form>
-
-		<form>
-			<fieldset>
-			<legend>Uso del List - Navegador usado</legend>
-			<label>Selecciona el Buscador utilizado:
-			<input list="buscadores" name="MisBuscadores" /></label>
-			<datalist id="buscadores">
-			<option value="Chrome">
-			<option value="Firefox">
-			<option value="Internet Explorer">
-			<option value="Opera">
-			<option value="Safari">
-			<option value="Microsoft Edge">
-			</datalist>
-			</fieldset>
-		</form>
-
+	
+				<!-- Radio buttons -->
+				<div class="form-group">
+					<label>Nivel de Experiencia:</label>
+					<div class="radio-group">
+						<input type="radio" id="junior" name="experiencia" value="junior" required>
+						<label for="junior">Junior</label>
+	
+						<input type="radio" id="mid" name="experiencia" value="mid" required>
+						<label for="mid">Mid</label>
+	
+						<input type="radio" id="senior" name="experiencia" value="senior" required>
+						<label for="senior">Senior</label>
+					</div>
+				</div>
+	
+				<!-- Lista desplegable -->
+				<div class="form-group">
+					<label for="servicio">Tipo de Servicio que necesitas:</label>
+					<select id="servicio" name="servicio">
+						<option value="desarrollo-web">Desarrollo Web</option>
+						<option value="consultoria">Consultoría Técnica</option>
+						<option value="mantenimiento">Mantenimiento de Sitios Web</option>
+						<option value="otro">Otro</option>
+					</select>
+				</div>
+	
+				<button type="submit">Enviar</button>
+			</form>
+		</div>
 	</section>
 
 	<footer>

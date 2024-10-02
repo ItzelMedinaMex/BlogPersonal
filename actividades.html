@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='utf-8' />
+    <title>Actividades</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="js/script.js"></script> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href='index.html'>Inicio</a></li>
+                <li><a href='autobiografia.html'>Quién soy</a></li>
+                <li><a href='galeria.html'>Galería</a></li>
+                <li><a href='contacto.html'>Contacto</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="fechaHora">
+        <h1>Fecha y Hora Actual</h1>
+        <div id="fecha-hora"></div>
+    </div>
+
+    <div>
+        <br><br><br><br>
+    </div>
+
+    <div id="convertidor">
+        <div class="converter">
+            <h1>Convertidor de Pesos a Dólares</h1>
+            <label for="pesos">Pesos Mexicanos (MXN): </label>
+            <input type="number" id="pesos" placeholder="Ingresa cantidad en pesos">
+            <button id="convertir-btn" onclick="convertir()">Convertir</button>
+            <p id="resultado"></p>
+        </div>
+    </div>
+    
+    <br><br><br><br>
+
+    <div class="calculadora-container"></div>
+            <div class="calculadora_contenedor">
+            <h1>Calculadora</h1>
+            <div class="calculadora">
+                <input type="text" id="pantalla" disabled>
+                <div class="botones">
+                    <button id="btn" onclick="agregarValor('7')">7</button>
+                    <button id="btn" onclick="agregarValor('8')">8</button>
+                    <button id="btn" onclick="agregarValor('9')">9</button>
+                    <button id="btn" onclick="operacion('/')">/</button>
+    
+                    <button id="btn" onclick="agregarValor('4')">4</button>
+                    <button id="btn" onclick="agregarValor('5')">5</button>
+                    <button id="btn" onclick="agregarValor('6')">6</button>
+                    <button id="btn" onclick="operacion('*')">*</button>
+    
+                    <button id="btn" onclick="agregarValor('1')">1</button>
+                    <button id="btn" onclick="agregarValor('2')">2</button>
+                    <button id="btn" onclick="agregarValor('3')">3</button>
+                    <button id="btn" onclick="operacion('-')">-</button>
+    
+                    <button id="btn" onclick="agregarValor('0')">0</button>
+                    <button id="btn" onclick="reset()">C</button>
+                    <button id="btn" onclick="calcular()">=</button>
+                    <button id="btn" onclick="operacion('+')">+</button>
+                </div>
+            </div>
+            </div>
+    </div>
+    <br><br><br>
+    <div class="quiz-container"></div>
+        <h1 class="quiz-title">Cuestionario Interactivo - Taylor Swift</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <h3>1. ¿En qué año lanzó Taylor Swift su primer álbum?</h3>
+                <label><input type="radio" name="q1" value="2006"> 2006</label><br>
+                <label><input type="radio" name="q1" value="2008"> 2008</label><br>
+                <label><input type="radio" name="q1" value="2010"> 2010</label><br>
+            </div>
+
+            <div class="question">
+                <h3>2. ¿Cuál de estos álbumes es de Taylor Swift?</h3>
+                <label><input type="radio" name="q2" value="Red"> Red</label><br>
+                <label><input type="radio" name="q2" value="Born This Way"> Born This Way</label><br>
+                <label><input type="radio" name="q2" value="25"> 25</label><br>
+            </div>
+
+            <div class="question">
+                <h3>3. ¿Cómo se llama la gira mundial que realizó en 2015?</h3>
+                <label><input type="radio" name="q3" value="The Red Tour"> The Red Tour</label><br>
+                <label><input type="radio" name="q3" value="1989 World Tour"> 1989 World Tour</label><br>
+                <label><input type="radio" name="q3" value="Speak Now Tour"> Speak Now Tour</label><br>
+            </div>
+
+            <div class="question">
+                <h3>4. ¿Con cuál canción ganó Taylor Swift el Grammy a "Canción del Año" en 2010?</h3>
+                <label><input type="radio" name="q4" value="Love Story"> Love Story</label><br>
+                <label><input type="radio" name="q4" value="You Belong With Me"> You Belong With Me</label><br>
+                <label><input type="radio" name="q4" value="White Horse"> White Horse</label><br>
+            </div>
+
+            <div class="question">
+                <h3>5. ¿Qué nombre tiene el documental sobre Taylor Swift lanzado en Netflix en 2020?</h3>
+                <label><input type="radio" name="q5" value="Miss Americana"> Miss Americana</label><br>
+                <label><input type="radio" name="q5" value="Folklore: The Long Pond Studio Sessions"> Folklore: The Long Pond Studio Sessions</label><br>
+                <label><input type="radio" name="q5" value="Reputation Stadium Tour"> Reputation Stadium Tour</label><br>
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Enviar Respuestas</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <footer>
+        Yucatán, Agosto, 2024.
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
