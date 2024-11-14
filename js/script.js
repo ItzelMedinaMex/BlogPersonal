@@ -121,3 +121,13 @@ function submitQuiz() {
         result.style.color = 'red';
     }
 }
+
+document.getElementById('registerForm').addEventListener('submit', function(e) {
+    let password = document.getElementById('password').value;
+    let confirmPassword = document.getElementById('confirm_password').value;
+
+    if (password !== confirmPassword) {
+        alert("Las contraseñas no coinciden");
+        e.preventDefault();
+    }
+});
